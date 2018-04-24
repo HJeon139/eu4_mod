@@ -1,0 +1,20 @@
+#735 - Hanseong
+
+owner = KOR
+controller = KOR
+culture = korean
+religion = catholic
+capital = "Hanseong"
+trade_goods = paper
+hre = no
+base_tax = 65
+base_production = 65
+base_manpower = 55
+is_city = yes
+add_core = KOR
+fort_15th = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+1519.1.1 = { discovered_by = POR } # Tome Pires
+1653.1.1 = { discovered_by = NED } # Hendrick Hamel

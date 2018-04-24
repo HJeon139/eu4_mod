@@ -1,0 +1,32 @@
+# 2111 - Hetu Ala
+
+owner = KOR
+controller = KOR
+add_core = KOR
+culture = korean
+religion = catholic
+capital = "Hetu Ala"
+trade_goods = iron
+hre = no
+base_tax = 35
+base_production = 35
+base_manpower = 35
+is_city = yes
+estate = estate_nomadic_tribes
+discovered_by = chinese
+discovered_by = nomad_group
+
+
+1616.1.1 = {
+	owner = KOR
+	controller = KOR
+	add_core = KOR
+	remove_core = MJZ
+} # The Later Jin Khanate
+1636.5.15 = {
+	owner = KOR
+	controller = KOR
+	add_core = KOR
+	remove_core = MCH
+} # The Qing Dynasty
+1709.1.1 = { discovered_by = SPA }
