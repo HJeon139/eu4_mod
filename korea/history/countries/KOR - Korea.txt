@@ -1,0 +1,369 @@
+﻿capital = 525 #South Korea - Seoul or Busan
+
+oob = "KOR_1936"
+
+# Starting tech
+set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.8
+
+set_research_slots = 4
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	marines  = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	basic_heavy_tank = 1  # PLACEHOLDER
+	basic_medium_tank = 1 # PLACEHOLDER
+	cv_early_fighter = 1
+	cv_CAS1 = 1
+	cv_naval_bomber1 = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	basic_heavy_cruiser = 1
+	early_battleship = 1
+	basic_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	basic_carrier = 1
+	transport = 1
+	trench_warfare = 1
+	base_strike = 1
+	synth_oil_experiments = 1
+}
+
+create_import = {
+		resource = oil
+		factories = 2
+		exporter = USA
+}
+
+1939.1.1 = {
+
+	add_political_power = 3198
+	
+
+	#adding ministers
+	add_ideas = {
+		JAP_mitsumasa_yonai
+		minoru_genda
+		hajime_sugiyama
+		soemu_toyoda
+		fushimi_hiroyasu
+		kawasaki
+
+		#laws
+		tot_economic_mobilisation
+		service_by_requirement
+		closed_economy
+	}
+
+	oob = "KOR_1939"
+	set_technology = {
+
+		#PLACEHOLDERS for vehicles
+		improved_submarine = 1
+		basic_destroyer = 1
+		improved_destroyer = 1
+		improved_heavy_cruiser = 1
+		improved_carrier = 1
+		heavy_battleship = 1
+		cv_fighter1 = 1
+		fighter1 = 1
+		tactical_bomber1 = 1
+	
+		#doctrines
+		#air
+		force_rotation = 1
+		fighter_baiting = 1
+		low_echelon_support = 1
+		dispersed_fighting = 1
+
+		grand_battle_plan = 1
+		prepared_defense = 1
+		grand_assault = 1
+		carrier_primacy = 1
+		carrier_task_forces = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+		concentrated_industry3 = 1
+	}
+}
+
+set_convoys = 400
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 35
+		}
+
+		fascism = {
+			popularity = 25
+		}
+		
+		communism = {
+			popularity = 30
+			#banned = no #default is no
+		}
+		
+		neutrality = { 
+			popularity = 10
+		}
+	}
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Syngman Rhee"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		warrior_code
+		emperor_showa
+		imperial_sanction
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Yi Kang"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kim Il-sung"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		warrior_code
+		emperor_showa
+		imperial_sanction
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Yi Un"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		warrior_code
+		emperor_showa
+		imperial_sanction
+		dictator
+	}
+}
+
+create_corps_commander = {
+	name = "Jeon Taejo"
+		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = {
+		trickster trait_engineer brilliant_strategist politically_connected
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Park Sungue"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = { 
+		offensive_doctrine
+		JAP_samurai_lineage   # hakushaku
+		politically_connected
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Cho Insun"
+		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = { offensive_doctrine JAP_samurai_lineage }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "In Myu"
+		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = { career_officer  }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Kim Jaesung"
+		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = { JAP_samurai_lineage }
+	skill = 3 
+	attack_skill = 1
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Jo Hansoon"
+		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = { trickster career_officer infantry_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Im Yu"
+		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = { trait_reckless }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Kim Sikyung" #Toshizo
+		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = { brilliant_strategist infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Park Jaewon" #Ando
+		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Young Haesung"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = { JAP_samurai_lineage politically_connected }
+	skill = 3 
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Lee Jaehyun"
+		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = { JAP_samurai_lineage inflexible_strategist trait_reckless }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Lee Nagyun"
+		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = { infantry_officer trait_reckless }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Kim Soo"
+		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = { career_officer substance_abuser }
+	skill = 1 
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Lee Soonshin"
+		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = { superior_tactician spotter }
+	skill = 5
+}
+
+create_navy_leader = {
+	name = "Jeong Angi"
+		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = { superior_tactician spotter }
+	skill = 5
+}

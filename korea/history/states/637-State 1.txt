@@ -1,0 +1,31 @@
+
+state={
+	id=637
+	name="STATE_637"
+
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 10
+			air_base = 3
+			dockyard = 4
+			arms_factory = 2
+			industrial_complex = 2
+			12207 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = KOR
+
+	}
+	resources={
+		oil=100 # was: 88
+	}
+
+	provinces={
+		1823 1839 1863 4728 7878 12207 12522 
+	}
+	manpower=169000
+	state_category="large_city"
+}
